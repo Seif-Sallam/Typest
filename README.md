@@ -1,5 +1,7 @@
-# Minesweeper
+# Typest
 
-A simple game about sweeping mines :D
+Very simple infinite typing test.
 
-Making it because I like it and would love to play it at any time without the need of downloading an application every time I want to play it :/.
+The words are gathered from [Mit Associate Professor Eric Price](https://www.mit.edu/~ecprice/wordlist.10000)
+
+Font: Consoles
