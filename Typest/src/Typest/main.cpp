@@ -77,7 +77,7 @@ void GenerateText(std::string& string, const std::vector<std::string>& words)
 
 int main()
 {
-	srand(time(0));
+	srand((uint32_t)time(0));
 	generator.seed(rand() % INT_MAX);
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Typest", sf::Style::None);
 	sf::Font font;
@@ -90,7 +90,7 @@ int main()
 	}
 
 	sf::RectangleShape whiteSpace;
-	whiteSpace.setSize(sf::Vector2f(window.getSize().x, 70.0f));
+	whiteSpace.setSize(sf::Vector2f(float(window.getSize().x), 70.0f));
 	whiteSpace.setPosition(0.0f, window.getSize().y / 2.0f - whiteSpace.getSize().y / 2.0f);
 
 	std::string currentTextStr = "";
